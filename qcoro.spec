@@ -21,6 +21,7 @@ BuildRequires:	Qt5Qml-devel >= 5.15.9
 BuildRequires:	Qt5Quick-devel
 BuildRequires:	Qt5WebSockets-devel
 BuildRequires:	Qt5Widgets-devel
+BuildRequires:	Qt6WebSockets-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
