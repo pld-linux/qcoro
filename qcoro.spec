@@ -5,12 +5,12 @@
 %define		qtver		5.15.2
 Summary:	QCoro - Coroutines for Qt5 and Qt6
 Name:		qcoro
-Version:	0.8.0
+Version:	0.9.0
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	https://github.com/danvratil/qcoro/archive/refs/tags/v%{version}.tar.gz
-# Source0-md5:	e7f7b073a42c863e123612243f2045bd
+# Source0-md5:	51cd24ec339ac7dea7a771dc231079d0
 URL:		https://github.com/danvratil/qcoro
 BuildRequires:	Qt5Concurrent-devel
 BuildRequires:	Qt5Core-devel
@@ -109,3 +109,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/mkspecs/modules/qt_QCoroQml.pri
 %{_libdir}/qt5/mkspecs/modules/qt_QCoroQuick.pri
 %{_libdir}/qt5/mkspecs/modules/qt_QCoroWebSockets.pri
+%{_libdir}/cmake/QCoro5Test
+%{_libdir}/qt5/mkspecs/modules/qt_QCoroTest.pri
